@@ -1,0 +1,10 @@
+label {
+    padding-right : 1em;
+    font-size: 12pt;
+}
+
+textarea {
+    width: 500px;
+    height : 3em;
+    vertical-align: text-top;
+}

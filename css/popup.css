@@ -1,0 +1,104 @@
+body {
+  font-size: 10pt;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  margin: 0;
+}
+
+main {
+  background: #ffffff;
+  min-width : 400px;
+  padding: 0 2em;
+}
+
+header {
+  font-weight: bold;
+  font-size: 12pt;
+  margin: 1em 0 0.5em 0;
+
+}
+  
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 10%;
+  height: 10%;
+  margin-left:40%;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid #555;
+  border-color: #555 transparent #555 transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+.lds-hourglass-hide {
+  display: none;
+}
+
+.boardItems {
+  margin: 0;
+  padding: 0;
+  display:grid;
+  width: 600px;
+}
+.boardItem {
+  list-style-type: none;
+  margin-bottom: 0.75em;
+}
+
+.boardItem a {
+  width: 100%;
+}
+
+.notrerunning {
+  width : 8px;
+  height: 8px;
+}
+
+.myMatch {
+  color: red;
+  font-weight: bold;
+}
+
+.hasDetail {
+  position: relative;
+  display: inline-block;
+}
+
+.hasDetail .detailText {
+  visibility: hidden;
+  width: 300px;
+  background-color: #999;
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px 1em;
+  position: absolute;
+  z-index: 1;
+  top: -25%;
+  left: 50%;
+}
+
+.hasDetail:hover .detailText {
+  visibility: visible;
+}
